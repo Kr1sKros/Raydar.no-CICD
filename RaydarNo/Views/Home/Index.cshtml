@@ -1,9 +1,43 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Raydar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="text-center">
-    <h1>Hello, World!</h1>
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Link to page-specific stylesheet -->
+<link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+
+<div class="hero">
+    <h1>Welcome to Raydar</h1>
+    <p>Developed by four passionate Computer Engineering students at UiA, Raydar is your SPF & UV tracking companion.</p>
+    <div class="preview">
+        <img src="~/images/preview.png" alt="App Preview" class="img-fluid rounded" />
+    </div>
+    <div class="download-btn">
+        <a href="https://play.google.com/store/apps/details?id=com.raydar.app" target="_blank">
+            <img src="~/images/playstore.png" alt="Get it on Google Play" />
+        </a>
+    </div>
+</div>
+
+<div class="features container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Morning UV Forecast</h2>
+            <p>Each morning, Raydar tells you the day's UV index, helping you choose the correct SPF for your skin type.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>SPF Recommendations</h2>
+            <p>Based on the UV forecast and your skin sensitivity, Raydar suggests the ideal SPF level to keep you protected.</p>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>Sunscreen Timer</h2>
+            <p>Set reminders to reapply sunscreen at optimal intervals so you stay safe all day long.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Favorite Locations</h2>
+            <p>Save multiple locations to quickly check UV forecasts wherever you go.</p>
+        </div>
+    </div>
 </div>
