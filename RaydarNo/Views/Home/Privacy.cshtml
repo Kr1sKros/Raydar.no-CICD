@@ -1,6 +1,58 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<!-- Reuse the index page CSS -->
+<link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+
+<div class="privacy container py-5">
+    <h1 class="text-center mb-4">@ViewData["Title"]</h1>
+
+    <p class="lead text-center mb-5">
+        We value your privacy. This policy explains what data we collect and how we use it to improve your experience with Raydar.
+    </p>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4>1. What We Collect</h4>
+            <p>
+                When you use Raydar, we may collect personal information such as your name, email, location preferences, skin type, and usage behavior within the app. This helps us provide accurate UV forecasts and personalized SPF recommendations.
+            </p>
+
+            <h4>2. How We Use Your Data</h4>
+            <p>
+                We use your data to:
+            <ul>
+                <li>Send UV index notifications and sunscreen reminders</li>
+                <li>Provide customized SPF advice based on your profile</li>
+                <li>Improve our app and ensure it works reliably</li>
+            </ul>
+            </p>
+
+            <h4>3. Data Security</h4>
+            <p>
+                Your data is securely stored and encrypted. We use modern cloud infrastructure and limit access to authorized personnel only.
+            </p>
+
+            <h4>4. Third-Party Sharing</h4>
+            <p>
+                We do not sell or share your data with third parties, unless legally required or to provide essential app functionality (e.g., notifications, analytics).
+            </p>
+
+            <h4>5. Your Rights</h4>
+            <p>
+                You can request access to, correction of, or deletion of your data at any time by contacting us. You can also delete your account through the app.
+            </p>
+
+            <h4>6. Updates</h4>
+            <p>
+                We may update this Privacy Policy as our app evolves. Changes will be reflected here with a revised “last updated” date.
+            </p>
+
+            <p class="mt-4 text-muted">
+                Last updated: May 6, 2025
+            </p>
+        </div>
+    </div>
+</div>
