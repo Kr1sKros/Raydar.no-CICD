@@ -1,0 +1,111 @@
+@{
+    ViewData["Title"] = "Theory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+
+<div class="theory container py-5">
+    <div class="bg-white p-5 rounded shadow-sm"> <!-- Added a white background -->
+        <h1 class="text-center mb-4">@ViewData["Title"]</h1>
+
+        <p class="lead text-center mb-5">
+            Welcome to the Theory section. Here we provide important information about sun exposure, the UV index, and how to protect your skin from harmful effects.
+        </p>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4>1. Weather Data from Yr.no</h4>
+                <p>
+                    Raydar app retrieves accurate and up-to-date weather data from <a href="https://yr.no/" target="_blank">Yr.no</a>, a trusted source for weather forecasts. The app uses this data to provide UV index predictions specific to your location, helping you make informed decisions about sun exposure and protection.
+                </p>
+
+                <h4>2. UVA and UVB Rays</h4>
+                <p>
+                    UVA and UVB are two types of ultraviolet (UV) radiation from the sun that can have different effects on your skin:
+                </p>
+                <ul>
+                    <li><strong>UVA:</strong> These rays penetrate deep into the skin and are primarily responsible for premature skin aging and the formation of wrinkles. UVA rays also contribute to DNA damage, which can lead to skin cancer.</li>
+                    <li><strong>UVB:</strong> UVB rays are more energetic and responsible for causing sunburn. These rays primarily affect the outer layer of the skin and play a major role in the development of skin cancer.</li>
+                </ul>
+                <p>
+                    UV radiation is measured using a UV index scale, which is a measure of the strength of UV radiation from the sun. The higher the UV index, the greater the potential for skin damage.
+                </p>
+
+                <h4>3. UV Index and Its Categories</h4>
+                <p>
+                    The UV index is categorized as follows:
+                </p>
+                <ul>
+                    <li><strong>Low (0-2):</strong> Minimal risk of harm to the skin and eyes.</li>
+                    <li><strong>Moderate (3-5):</strong> Risk of harm is moderate. Protection against sun exposure is advisable.</li>
+                    <li><strong>High (6-7):</strong> High risk of harm. Protection against sun exposure is highly recommended.</li>
+                    <li><strong>Very High (8-10):</strong> Very high risk of harm. Take extra precautions to protect your skin.</li>
+                    <li><strong>Extreme (11+):</strong> Extreme risk of harm. Avoid direct sun exposure and use strong protection.</li>
+                </ul>
+
+                <!-- UV Index Image beside the explanation -->
+                <div class="d-flex justify-content-start my-4">
+                    <img src="~/images/low.png" alt="UV Index Indicator" class="img-fluid" style="max-width: 150px; margin-right: 20px;">
+                </div>
+
+                <h4>4. Responsibility of the User</h4>
+                <p>
+                    By using the Raydar app, you acknowledge that you are solely responsible for how you use the information provided. The app gives recommendations for sun exposure based on the UV index, but ultimately, you are responsible for making decisions about your skin protection. Raydar does not replace professional medical advice, and you should consult with a healthcare provider for personalized recommendations.
+                </p>
+
+                <h4>5. Skin Types and Sun Exposure</h4>
+                <p>
+                    Different skin types react to sun exposure in various ways. It is essential to understand your skin type to determine how long you can safely be in the sun without risking damage.
+                </p>
+                <ul>
+                    <li><strong>Type I:</strong> Very fair skin, always burns, never tans.</li>
+                    <li><strong>Type II:</strong> Fair skin, burns easily, tans minimally.</li>
+                    <li><strong>Type III:</strong> Medium skin, tans gradually, burns moderately.</li>
+                    <li><strong>Type IV:</strong> Olive skin, burns minimally, tans easily.</li>
+                    <li><strong>Type V:</strong> Brown skin, rarely burns, tans easily.</li>
+                    <li><strong>Type VI:</strong> Dark brown or black skin, never burns, tans deeply.</li>
+                </ul>
+                <p>
+                    Understanding your skin type helps you adjust your sun exposure time to prevent damage, especially when the UV index is high. Regardless of your skin type, protection from harmful UV rays is essential for preventing long-term damage.
+                </p>
+
+                <h4>6. SPF and Sunscreen Application</h4>
+                <p>
+                    SPF (Sun Protection Factor) measures the level of protection a sunscreen provides against UVB rays, the ones responsible for sunburn. The higher the SPF, the greater the protection.
+                </p>
+                <ul>
+                    <li><strong>SPF 15:</strong> Blocks 93% of UVB rays.</li>
+                    <li><strong>SPF 30:</strong> Blocks 97% of UVB rays.</li>
+                    <li><strong>SPF 50:</strong> Blocks 98% of UVB rays.</li>
+                </ul>
+                <p>
+                    To ensure proper protection, apply sunscreen generously to all exposed skin areas. Reapply every two hours or more often if swimming or sweating. Don't forget to cover areas like ears, neck, and lips.
+                </p>
+
+                <h4>7. Negative Side Effects of Sun Exposure Without Protection</h4>
+                <p>
+                    Prolonged sun exposure without proper protection can lead to numerous health issues, including:
+                </p>
+                <ul>
+                    <li><strong>Skin Cancer:</strong> UV radiation is the leading cause of skin cancer, particularly melanoma, basal cell carcinoma, and squamous cell carcinoma.</li>
+                    <li><strong>Premature Aging:</strong> Sun exposure accelerates skin aging, causing wrinkles, age spots, and loss of skin elasticity.</li>
+                    <li><strong>Eye Damage:</strong> UV rays can damage the eyes, leading to cataracts, macular degeneration, and photokeratitis (sunburn of the cornea).</li>
+                    <li><strong>Sunburn:</strong> Overexposure to UVB rays can result in painful sunburn, which damages the skin and increases the risk of skin cancer.</li>
+                </ul>
+                <p>
+                    Always protect your skin by using sunscreen, seeking shade, and wearing protective clothing to minimize the harmful effects of sun exposure.
+                </p>
+
+                <!-- Sources Section -->
+                <h4>8. Sources</h4>
+                <ul>
+                    <li>World Health Organization (WHO) - <a href="https://www.who.int/uv" target="_blank">https://www.who.int/uv</a></li>
+                    <li>American Cancer Society - <a href="https://www.cancer.org/healthy/be-safe-in-sun.html" target="_blank">https://www.cancer.org/healthy/be-safe-in-sun.html</a></li>
+                    <li>National Cancer Institute (NCI) - <a href="https://www.cancer.gov/about-cancer/causes-prevention/risk/sunlight" target="_blank">https://www.cancer.gov/about-cancer/causes-prevention/risk/sunlight</a></li>
+                    <li>Yr.no - <a href="https://yr.no/" target="_blank">https://yr.no/</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
